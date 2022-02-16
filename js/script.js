@@ -17,8 +17,24 @@ function loadValues() {
   });
 }
 
+async function loadTable() {
+  const response = await swapiGet("films/");
+  const tableData = response.data.results;
+  tableData.forEach((film) => {
+    $("#films-table").append(
+      `<tr>
+      <td>${film.title}</td>
+      <td>${moment(film.release_date).format("DD/MM/YYYY")}</td>
+      <td>${film.director}</td>
+      <td>${film.episode_id}</td>
+      </tr>`
+    );
+  });
+}
+
 function swapiGet(params) {
   return axios.get(`https://swapi.dev/api/${params}`);
 }
 
 loadValues();
+loadTable();
