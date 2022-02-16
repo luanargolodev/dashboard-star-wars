@@ -147,6 +147,22 @@ ul {
   padding: 10px 0;
 }
 
+.content-info {
+  display: flex;
+  align-items: center;
+}
+
+.chart {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  width: 400px;
+  height: 450px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
 @media (max-width: 1250px) {
   .cards-header {
     flex-direction: column;
