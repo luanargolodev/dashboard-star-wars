@@ -117,3 +117,10 @@ ul {
 .card-large .card-container .card-content:first-child {
   border-right: 1px solid #111111;
 }
+
+@media (max-width: 1250px) {
+  .cards-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
