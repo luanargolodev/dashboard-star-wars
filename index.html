@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Wars | Dashboard</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="lateral-menu">
+        <img src="./imgs/logo.png" alt="Star Wars" />
+        <div class="menu-items">
+          <ul>
+            <li>
+              <img src="./imgs/dashboard.svg" alt="Dashboard" />
+              <p>Dashboard</p>
+            </li>
+            <li>
+              <img src="./imgs/personagens.svg" alt="Personagens" />
+              <p>Personagens</p>
+            </li>
+            <li>
+              <img src="./imgs/planetas.svg" alt="Planetas e luas" />
+              <p>Planetas e luas</p>
+            </li>
+            <li>
+              <img src="./imgs/nave.svg" alt="Naves espaciais" />
+              <p>Naves espaciais</p>
+            </li>
+          </ul>
+        </div>
+        <div class="settings">
+          <i data-feather="settings"></i>
+          <p>Configurações</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
